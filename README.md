@@ -1,15 +1,31 @@
 <h1 align="center">Adaptive Audio Enhancement System</h1>
 
-![MATLAB](https://img.shields.io/badge/MATLAB-R2024a-orange) ![Status](https://img.shields.io/badge/Status-Completed-green) ![Architecture](https://img.shields.io/badge/Architecture-Hybrid_(DSP_+_ML)-blueviolet)
+<p align="center">
+  <img src="https://img.shields.io/badge/MATLAB-R2024a-orange" />
+  <img src="https://img.shields.io/badge/Status-Completed-green" />
+  <img src="https://img.shields.io/badge/Architecture-Hybrid_(DSP_+_ML)-blueviolet" />
+</p>
 
-## 📄 System Overview
-The **Adaptive Audio Enhancement System** is a hybrid signal processing framework designed to improve speech intelligibility in noisy environments.
+<p align="center">
+  <img src="Cover_Image.png" alt="Project Cover" width="100%">
+</p>
 
-It utilizes a **Dual-Stage Architecture**:
-1.  **Core Processing:** Uses **Adaptive Filtering (Sign-LMS)** for real-time, low-latency noise cancellation.
-2.  **Intelligent Monitoring:** Integrates **Deep Learning (CNN)** and **Machine Learning (SVM/RF)** models to continuously classify audio quality and benchmark the filter's performance.
+## 📖 About this Project
+This project addresses the critical challenge of background noise in modern real-time communication platforms (VoIP, Zoom, Microsoft Teams). As remote work becomes the norm, the demand for clear, noise-free audio has skyrocketed.
 
-This approach combines the speed/reliability of DSP with the analytical power of AI.
+Traditional AI noise suppression can be computationally heavy and introduce lag. This project proposes a **Hybrid Solution** that combines the mathematical precision and speed of **Digital Signal Processing (DSP)** with the intelligent monitoring capabilities of **Deep Learning**. The result is a system that cleans audio in real-time (<2.5ms latency) while using AI to verify and benchmark the output quality.
+
+## ⚙️ Technical Architecture
+The system operates on a block-processing basis with a **Dual-Stage Architecture**:
+
+### 1. The Engine (DSP Layer)
+* **Sign-LMS Adaptive Filter:** The core component. It models and subtracts noise mathematically.
+    * *Why this?* It has $O(N)$ complexity, making it ultra-fast and suitable for embedded hardware.
+* **VAD (Voice Activity Detection):** Uses energy thresholds to prevent the filter from distorting silence.
+
+### 2. The Monitor (AI Layer)
+* **Deep Learning (CNN):** A Convolutional Neural Network analyzes spectrograms of the output audio to classify it as "Clean" or "Noisy" with **92.5% accuracy**.
+* **Machine Learning (SVM/RF):** Classical models (Random Forest) provide a secondary validation layer based on MFCC features.
 
 ## 📊 System Output
 ![Dashboard Results](https://github.com/Rohithkannas/Adaptive-Audio-Enhancement-System/blob/ca85e3989f0390d7ac7b76dfff228f93856f65cf/Dashboard_results.png)
@@ -47,6 +63,11 @@ The system operates on a block-processing basis with three distinct stages:
 3.  **Requirements:** Signal Processing Toolbox, Statistics and Machine Learning Toolbox, Deep Learning Toolbox.
 4.  Run the simulation to generate synthetic audio, apply the filter, and view the ML classification results.
 
-## 👨‍💻 Author
-**[Your Name]**
-* *Specialization: DSP & Intelligent Systems*
+## 🏁 Conclusion
+The **Adaptive Audio Enhancement System** demonstrates that a hybrid architecture is the optimal solution for real-time audio processing. By offloading the heavy filtering task to the efficient Sign-LMS algorithm and reserving AI models for high-level quality monitoring, the system achieves a latency of **~2.5ms**—well within the industry standard of 20ms—while maintaining high spectral fidelity. This architecture offers a scalable path for deploying noise cancellation on low-power devices.
+
+## 📬 Contact
+If you have any questions or would like to discuss this project further, please feel free to connect:
+
+* **LinkedIn:** [Your Name](https://www.linkedin.com/in/rohith4510/)
+* **Email:** [your.email@example.com](rohithkanna.ss@gmail.com)
