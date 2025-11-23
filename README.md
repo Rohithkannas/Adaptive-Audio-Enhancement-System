@@ -69,5 +69,5 @@ The **Adaptive Audio Enhancement System** demonstrates that a hybrid architectur
 ## 📬 Contact
 If you have any questions or would like to discuss this project further, please feel free to connect:
 
-* **LinkedIn:** [Your Name](https://www.linkedin.com/in/rohith4510/)
-* **Email:** [your.email@example.com](rohithkanna.ss@gmail.com)
+* **LinkedIn:** [rohith4510](https://www.linkedin.com/in/rohith4510/)
+* **Email:** [rohithkanna.ss@gmail.com](rohithkanna.ss@gmail.com)
