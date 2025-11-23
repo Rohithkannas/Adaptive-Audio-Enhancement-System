@@ -5,6 +5,8 @@ A real-time audio enhancement framework combining Sign-LMS adaptive filtering (D
 
 ![MATLAB](https://img.shields.io/badge/MATLAB-R2024a-orange) ![Status](https://img.shields.io/badge/Status-Completed-green) ![Architecture](https://img.shields.io/badge/Architecture-Hybrid_(DSP_+_ML)-blueviolet)
 
+![Dashboard Results](https://github.com/Rohithkannas/Adaptive-Audio-Enhancement-System/blob/ca85e3989f0390d7ac7b76dfff228f93856f65cf/Dashboard_results.png)
+
 ## 📄 System Overview
 The **Adaptive Audio Enhancement System** is a hybrid signal processing framework designed to improve speech intelligibility in noisy environments.
 
