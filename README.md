@@ -27,16 +27,16 @@ The system operates on a block-processing basis with a **Dual-Stage Architecture
 * **Deep Learning (CNN):** A Convolutional Neural Network analyzes spectrograms of the output audio to classify it as "Clean" or "Noisy" with **92.5% accuracy**.
 * **Machine Learning (SVM/RF):** Classical models (Random Forest) provide a secondary validation layer based on MFCC features.
 
-  ## 📂 Dataset Description
+## 📂 Simulation Environment
 Unlike traditional projects that rely on static datasets, this system utilizes a **Dynamic Simulation Engine** to generate synthetic audio environments on the fly. This ensures reproducible and customizable testing conditions.
 
 The dataset is constructed in real-time with the following components:
 * **Foreground Speech:** Simulates two distinct speakers (Male & Female) using harmonic series synthesis with specific fundamental frequencies (120Hz & 220Hz) and formant modulation to mimic human vocal tracts.
 * **Background Interference:** Injects non-stationary noise profiles common in work-from-home scenarios:
-    * *Impulsive:* Mechanical keyboard typing (Randomized intervals).
-    * *Transient:* Dog barking bursts (Stochastic occurrence).
-    * *Stationary:* HVAC/Fan hum (60Hz + harmonics).
-    * *Broadband:* Ambient traffic noise.
+    * **Impulsive:** Mechanical keyboard typing (Randomized intervals).
+    * **Transient:** Dog barking bursts (Stochastic occurrence).
+    * **Stationary:** HVAC/Fan hum (60Hz + harmonics).
+    * **Broadband:** Ambient traffic noise.
 * **Signal Specs:** Single-channel (Mono) | 16 kHz Sampling Rate (VoIP Standard) | 5-second Duration.
 
 ## 📊 System Output
