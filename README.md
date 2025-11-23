@@ -15,7 +15,7 @@ It utilizes a **Dual-Stage Architecture**:
 This approach combines the speed/reliability of DSP with the analytical power of AI.
 
 ## 📊 System Output
-![Dashboard Results](Dashboard_results.png)
+![Dashboard Results]("C:/Users/ROHITH KANNA S/Downloads/Dashboard_results.png")
 *Figure 1: Signal processing results (Top) and ML-based Quality Classification Matrix (Bottom).*
 
 ## ⚙️ Technical Architecture
