@@ -1,7 +1,4 @@
-# Adaptive-Audio-Enhancement-System
-A real-time audio enhancement framework combining Sign-LMS adaptive filtering (DSP) for noise cancellation with CNN &amp; SVM models for intelligent quality assessment.
-
-# 📡 Adaptive Audio Enhancement System
+<h1 align="center">Adaptive Audio Enhancement System</h1>
 
 ![MATLAB](https://img.shields.io/badge/MATLAB-R2024a-orange) ![Status](https://img.shields.io/badge/Status-Completed-green) ![Architecture](https://img.shields.io/badge/Architecture-Hybrid_(DSP_+_ML)-blueviolet)
 
