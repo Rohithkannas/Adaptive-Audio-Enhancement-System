@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <img src="[Cover_Image.png](https://github.com/Rohithkannas/Adaptive-Audio-Enhancement-System/blob/f5b950792ca2ebdc9709a8649c48357a6555698d/MatlabprojectImage.png)" alt="Project Cover" width="100%">
+  <img src="https://github.com/Rohithkannas/Adaptive-Audio-Enhancement-System/blob/f5b950792ca2ebdc9709a8649c48357a6555698d/MatlabprojectImage.png" alt="Project Cover" width="100%">
 </p>
 
 ## 📖 About this Project
