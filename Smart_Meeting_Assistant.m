@@ -1,11 +1,3 @@
-%% ========================================================================
-%  AI-POWERED SMART MEETING ASSISTANT (FINAL WORKING VERSION)
-%  Real-Time Noise Cancellation & Audio Enhancement System
-%  
-%  STATUS: Debugged & Verified.
-%  REQ: Audio Toolbox, Statistics Toolbox, Deep Learning Toolbox
-% =========================================================================
-
 clear all;
 close all; clc;
 warning('off', 'all');
@@ -19,9 +11,6 @@ fprintf('╚══════════════════════�
 %% ========================================================================
 %  PART 1: SIMULATION SETUP - REAL MEETING SCENARIO
 % =========================================================================
-fprintf('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n');
-fprintf('PART 1: Simulating Real Video Conference Environment\n');
-fprintf('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n');
 
 Fs = 16000; % Standard sampling rate for VoIP
 duration = 5; % 5 second meeting clip
@@ -96,9 +85,6 @@ fprintf('✓ Initial SNR: %.2f dB (Poor quality)\n\n', initial_SNR);
 %% ========================================================================
 %  PART 2: ADAPTIVE NOISE CANCELLATION - Sign LMS Algorithm
 % =========================================================================
-fprintf('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n');
-fprintf('PART 2: Applying Adaptive Noise Cancellation\n');
-fprintf('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n');
 
 fprintf('→ Implementing Sign LMS algorithm...\n');
 
@@ -141,9 +127,6 @@ fprintf('✓ Improvement: %.2f dB\n\n', snr_after_lms - initial_SNR);
 %% ========================================================================
 %  PART 3: DEEP LEARNING (CNN) FOR AUDIO CLASSIFICATION
 % =========================================================================
-fprintf('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n');
-fprintf('PART 3: Deep Learning Audio Enhancement (CNN)\n');
-fprintf('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n');
 
 % Check for Toolbox
 if ~license('test', 'Neural_Network_Toolbox')
@@ -212,9 +195,6 @@ fprintf('✓ CNN Training Complete. Accuracy: %.1f%%\n\n', cnn_accuracy);
 %% ========================================================================
 %  PART 4: ADVANCED AUDIO FEATURE EXTRACTION & ANALYSIS
 % =========================================================================
-fprintf('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n');
-fprintf('PART 4: Audio Feature Extraction & Voice Activity Detection\n');
-fprintf('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n');
 
 % Extract comprehensive audio features
 function features = extractFullFeatures(signal, Fs)
@@ -297,9 +277,6 @@ fprintf('✓ Speech activity detected: %.1f%% of time\n\n', speech_percentage);
 %% ========================================================================
 %  PART 5: MACHINE LEARNING - AUDIO QUALITY CLASSIFICATION
 % =========================================================================
-fprintf('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n');
-fprintf('PART 5: ML-based Audio Quality Assessment\n');
-fprintf('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n');
 
 % Generate synthetic dataset for quality classification
 fprintf('→ Creating ML training dataset...\n');
@@ -368,9 +345,7 @@ fprintf('  ✓ KNN Accuracy: %.2f%%\n\n', acc_knn);
 %% ========================================================================
 %  PART 6: REAL-TIME LATENCY CHECK
 % =========================================================================
-fprintf('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n');
-fprintf('PART 6: Real-Time Processing Simulation\n');
-fprintf('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n');
+
 
 % Setup for latency test
 block_size = 320; % 20ms chunks at 16kHz
@@ -403,9 +378,6 @@ fprintf('✓ Variable "timers" created successfully.\n\n');
 %% ========================================================================
 %  PART 7: COMPREHENSIVE VISUALIZATION
 % =========================================================================
-fprintf('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n');
-fprintf('PART 7: Generating Comprehensive Visualizations\n');
-fprintf('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n');
 
 % Create the main dashboard
 figure('Position', [50, 50, 1400, 900], 'Name', 'Smart Meeting Assistant - Final Dashboard');
@@ -478,9 +450,6 @@ fprintf('✓ Project Simulation Complete.\n\n');
 %% ========================================================================
 %  PART 8 & 10: METRICS, ANALYTICS AND REPORT GENERATION
 % =========================================================================
-fprintf('\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n');
-fprintf('PART 8 & 10: Analytics & Final Report\n');
-fprintf('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n');
 
 % --- 1. Calculate Meeting Metrics ---
 % Audio quality score (0-100)
@@ -588,4 +557,5 @@ function result = ternary(condition, true_val, false_val)
     else
         result = false_val;
     end
+
 end
